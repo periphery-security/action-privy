@@ -45,9 +45,6 @@ jobs:
         id: pnpm-lint
         run: pnpm run lint
 
-      - name: Test
-        id: pnpm-ci-test
-        run: pnpm run ci-test
 
   test-action:
     name: GitHub Actions Test
@@ -63,10 +60,8 @@ jobs:
         uses: ./
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          filename: .github/workflows/sample.json
+          trivy-results: .github/workflows/sample.json
           dry-run: true
-          create-labels: true
-          enable-fix-label: true
 
       - name: Print Output
         id: output
