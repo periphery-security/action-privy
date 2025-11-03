@@ -24,7 +24,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8 # Specify a pnpm version
+          version: 9 # Specify a pnpm version
 
       - name: Setup Node.js
         id: setup-node
