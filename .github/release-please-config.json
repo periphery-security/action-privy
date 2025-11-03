@@ -6,20 +6,20 @@
   "pull-request-header": "🚀 **Release Time!** This PR contains the next release for our project.",
   "pull-request-footer": "---\n\nThis PR was generated automatically by Release Please. 🤖",
   "changelog-sections": [
-    {"type": "feat", "section": "🎉 New Features"},
-    {"type": "fix", "section": "🐛 Bug Fixes"},
-    {"type": "perf", "section": "⚡ Performance Improvements"},
-    {"type": "deps", "section": "📦 Dependency Updates"},
-    {"type": "docs", "section": "📚 Documentation", "hidden": false},
-    {"type": "chore", "section": "🔧 Maintenance", "hidden": true},
-    {"type": "test", "section": "✅ Tests", "hidden": true}
+    { "type": "feat", "section": "🎉 New Features" },
+    { "type": "fix", "section": "🐛 Bug Fixes" },
+    { "type": "perf", "section": "⚡ Performance Improvements" },
+    { "type": "deps", "section": "📦 Dependency Updates" },
+    { "type": "docs", "section": "📚 Documentation", "hidden": false },
+    { "type": "chore", "section": "🔧 Maintenance", "hidden": true },
+    { "type": "test", "section": "✅ Tests", "hidden": true }
   ],
   "packages": {
     ".": {
       "component": "action-privy",
-  	  "release-type": "node",
+      "release-type": "node",
       "tag-separator": "@",
-  	  "include-v-in-tag": false
+      "include-v-in-tag": false
     }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
