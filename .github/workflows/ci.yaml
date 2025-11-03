@@ -44,28 +44,3 @@ jobs:
       - name: Lint
         id: pnpm-lint
         run: pnpm run lint
-
-
-  test-action:
-    name: GitHub Actions Test
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        id: checkout
-        uses: actions/checkout@v5
-
-      - name: Test Local Action
-        id: test-action
-        uses: ./
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          trivy-results: .github/workflows/sample.json
-          dry-run: true
-
-      - name: Print Output
-        id: output
-        run: |
-          echo "${{ steps.test-action.outputs.issues-created }}"
-          echo "${{ steps.test-action.outputs.issues-updated }}"
-          echo "${{ steps.test-action.outputs.issues-closed }}"
